@@ -80,7 +80,7 @@ def parse_parameterWb_2_list(sheet):
         Para.append(records)
         records = []
 
-    for o in oldPara: print (o)
+    for o in Para: print (o)
 
     # 4.1.2. append data from Para list into dictionary style lists
     scanrange = []
@@ -121,8 +121,11 @@ def parse_parameterWb_2_list(sheet):
     # 4.1.3. convert start date & end date in scan range list to yyyymm format
     # datetime(*xlrd.xldate_as_tuple(r[3], 0)[0:5]).strftime("%Y%m") 
 
+    return scanrange, intermonth, intercomm
+
 # 4.2. read old sheet
 oldsheet = xlrd.open_workbook(TestPara_xlsx).sheet_by_name("Old")
+scanrange, intermonth, intercomm = parse_parameterWb_2_list(oldsheet)
 
 # 4.2. read new sheet
 newsheet = xlrd.open_workbook(TestPara_xlsx).sheet_by_name("New")
