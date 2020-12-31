@@ -1,0 +1,3 @@
+palindrome = a string that is read the same front-to-back and back-to-front.
+
+algorithm = a sequence of steps that accomplish a task.
