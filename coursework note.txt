@@ -1,3 +1,28 @@
 palindrome = a string that is read the same front-to-back and back-to-front.
 
 algorithm = a sequence of steps that accomplish a task.
+
+use import doctest
+    doctest.testmod()
+... to test if the output of the function meets the intended output
+
+when running a module, its variable __name__ refers to the string '__main__' ==> if we have code that should only be executed when a module is run and not when that module is imported, 
+we should make sure to put that code inside "if __name__ equals __main__" statement. 
+
+self in class refers to the object that the method is being called on.
+
+unittest =  1. import unittest 
+            2. define a new class in the module
+            3. define each test case in the module as separated function
+            4. in each test case, call the module that we want to test --> assign the actual result in a variable (e.g. actual)
+            5. assigne the expected result in another variable (e.g. expected)
+            6. check if the actual and expected variables are the same
+unittest.main looks through all the test case sub classes, in the correct module for methods that begin with "test", it calls each of them and reports any unexpected result.
+Each dot in the displayed result indicates a test. Each other error code indicates a failed test (e.g. F = failed, E = error)
+
+choosing test cases:
+    1. size: For collections, such as strings, lists, tuples, and dictionaries. Test with the empty collection. A collection with 1 item. The smallest interesting case. And a  collection with several items. 
+    2. dichotomies: For example. Vowels and non-vowels. Even and odd. Positive and negative. Empty and full.
+    3. boundaries: If the function behaves differently for values near a particular threshold, test at that threshold.
+    4. order: if the function behaves differently when the values are in different orders, identify and test each of those orders. 
+
