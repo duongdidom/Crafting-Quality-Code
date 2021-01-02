@@ -26,3 +26,13 @@ choosing test cases:
     3. boundaries: If the function behaves differently for values near a particular threshold, test at that threshold.
     4. order: if the function behaves differently when the values are in different orders, identify and test each of those orders. 
 
+analysing algorithm = look at number of steps they take for a particular input. Rather than timing how long it takes the code to run. 
+
+steps = how many times a function is executed. Including inside the loop. e.g.:
+    for i in range (1, n+1):        --> looped n times
+        for j in range (1, n+1):    --> looped n times
+            print(i, j)             --> shall be executed n*n = n**2 times
+
+number of steps can be linear (increasing same as n as n grows), quadratic (increasing more than n as n grows), or logarithmic (reducing as n grows)
+
+if 2 solutions solve the same problem, should use the solution that have linear runtime
