@@ -36,3 +36,11 @@ steps = how many times a function is executed. Including inside the loop. e.g.:
 number of steps can be linear (increasing same as n as n grows), quadratic (increasing more than n as n grows), or logarithmic (reducing as n grows)
 
 if 2 solutions solve the same problem, should use the solution that have linear runtime
+
+in python, object is the most base class, meaning that every other class is derived from the object class. See help(object).
+
+dir(object) = list all methods in a class
+
+methods that begin and end in 2 underscores are called special methods. E.g. __main__, __format__, __init__...
+
+str.format uses placeholders (0,1,2,...) to replace with actual values in the string. The placeholders act as the index
