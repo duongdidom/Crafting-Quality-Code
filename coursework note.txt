@@ -44,3 +44,7 @@ dir(object) = list all methods in a class
 methods that begin and end in 2 underscores are called special methods. E.g. __main__, __format__, __init__...
 
 str.format uses placeholders (0,1,2,...) to replace with actual values in the string. The placeholders act as the index
+
+using "assert" statement to check if the precondition of the function is met. E.g. asset 0 <= n <= len(L). Can print the assertion error if the precondition is not met.
+
+constants are named with UPPERCASE letters to distinguish them from other variables. Constants values should never be changed.
